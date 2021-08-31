@@ -166,11 +166,15 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.8.0.1534" />
-    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.1.9" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform" Version="6.2.12" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Xamarin.Forms.IconFontHelper\src\IconFontHelper\IconFontHelper.csproj">
+      <Project>{50b8e108-ba45-45aa-97bd-9b30bd192c33}</Project>
+      <Name>IconFontHelper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\FontAwesome.Brand\FontAwesome.Brand.csproj">
       <Project>{e5b1623e-2435-4e83-b6a3-bfdbed040f17}</Project>
       <Name>FontAwesome.Brand</Name>

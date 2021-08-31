@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
@@ -21,7 +21,7 @@ https://fontawesome.com/icons/</Description>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <NoWarn>1701;1702;1591</NoWarn>
-    <DocumentationFile>D:\source\repos\Xamarin.Forms.FontAwesome\src\FontAwesome.Regular\FontAwesome.Regular.xml</DocumentationFile>
+    <DocumentationFile></DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
@@ -44,8 +44,11 @@ https://fontawesome.com/icons/</Description>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.726" />
-    <PackageReference Include="Xamarin.Forms.IconFontHelper" Version="1.0.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2083" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Xamarin.Forms.IconFontHelper\src\IconFontHelper\IconFontHelper.csproj" />
   </ItemGroup>
 
 </Project>

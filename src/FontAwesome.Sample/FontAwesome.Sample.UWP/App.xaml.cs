@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
@@ -57,7 +58,12 @@ namespace FontAwesome.Sample.UWP
 
                 rootFrame.NavigationFailed += OnNavigationFailed;
 
-                Xamarin.Forms.Forms.Init(e);
+                // Workaround for this issue: https://github.com/xamarin/Xamarin.Forms/issues/12404
+                var assemblies = new List<Assembly>();
+                assemblies.Add(typeof(FontAwesome.Solid.Fonts).GetTypeInfo().Assembly);
+                assemblies.Add(typeof(FontAwesome.Regular.Fonts).GetTypeInfo().Assembly);
+                assemblies.Add(typeof(FontAwesome.Brand.Fonts).GetTypeInfo().Assembly);
+                Xamarin.Forms.Forms.Init(e, assemblies);
 
                 if (e.PreviousExecutionState == ApplicationExecutionState.Terminated)
                 {
