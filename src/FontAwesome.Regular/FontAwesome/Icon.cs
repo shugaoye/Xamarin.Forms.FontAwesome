@@ -115,6 +115,8 @@ namespace FontAwesome.Regular
         /// <summary>fa-file-word</summary>
         FileWord = '\uf1c2',
         /// <summary>fa-flag</summary>
+        Fingerprint = '\uf009',
+        /// <summary>fa-fingerprint</summary>
         Flag = '\uf024',
         /// <summary>fa-flushed</summary>
         Flushed = '\uf579',
@@ -251,6 +253,8 @@ namespace FontAwesome.Regular
         /// <summary>fa-plus-square</summary>
         PlusSquare = '\uf0fe',
         /// <summary>fa-question-circle</summary>
+        QrCode = '\uf008',
+        /// <summary>fa-qrcode</summary>
         QuestionCircle = '\uf059',
         /// <summary>fa-registered</summary>
         Registered = '\uf25d',
@@ -261,6 +265,8 @@ namespace FontAwesome.Regular
         /// <summary>fa-save</summary>
         Save = '\uf0c7',
         /// <summary>fa-share-square</summary>
+        Scan = '\uf006',
+        /// <summary>fa-scan</summary>
         ShareSquare = '\uf14d',
         /// <summary>fa-smile</summary>
         Smile = '\uf118',

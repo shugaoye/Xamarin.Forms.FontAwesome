@@ -18,13 +18,19 @@
         <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
             <Image Margin="15" HorizontalOptions="Center" VerticalOptions="Center">
                 <Image.Source>
-                    <iconsS:IconSource Icon="Heart" Size="100" />
+                    <iconsS:IconSource Icon="Fingerprint" Size="100" />
                 </Image.Source>
             </Image>
 
             <Image Margin="15" HorizontalOptions="Center" VerticalOptions="Center">
                 <Image.Source>
-                    <iconsR:IconSource Icon="Heart" Color="Red" Size="100"/>
+                    <iconsR:IconSource Icon="Fingerprint" Color="Black" Size="100"/>
+                </Image.Source>
+            </Image>
+
+            <Image Margin="15" HorizontalOptions="Center" VerticalOptions="Center">
+                <Image.Source>
+                    <iconsR:IconSource Icon="Scan" Color="Blue" Size="100"/>
                 </Image.Source>
             </Image>
 
